@@ -40,6 +40,10 @@
     <ApplicationIcon />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ffme.common, Version=3.4.2.240, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SubCLibraries\ffme.common.dll</HintPath>
+    </Reference>
     <Reference Include="FFmpeg.AutoGen, Version=3.4.0.5, Culture=neutral, PublicKeyToken=9b7632533a381715, processorArchitecture=MSIL">
       <HintPath>..\packages\FFmpeg.AutoGen.3.4.0.5\lib\net45\FFmpeg.AutoGen.dll</HintPath>
     </Reference>
@@ -116,12 +120,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MediaElement.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Unosquare.FFME.Common\Unosquare.FFME.Common.csproj">
-      <Project>{76b2db70-c8ab-4517-8afb-051383e496b7}</Project>
-      <Name>Unosquare.FFME.Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
